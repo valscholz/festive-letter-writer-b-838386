@@ -1,5 +1,5 @@
 # Build stage
-FROM python:3.11-slim AS builder
+FROM python:3.12-slim AS builder
 
 # Set working directory
 WORKDIR /app
@@ -16,7 +16,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --user -r requirements.txt
 
 # Runtime stage
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 # Create non-root user
 RUN useradd -m -u 1000 appuser
