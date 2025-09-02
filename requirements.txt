@@ -1,5 +1,5 @@
-openai-agents==0.2.5
-openai==1.69.0
+openai-agents>=0.2.10
+openai>=1.50.0,<1.70.0
 python-dotenv>=1.0.1
 asyncio
 fastapi>=0.100.0
